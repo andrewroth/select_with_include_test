@@ -1,0 +1,10 @@
+== select_with_include test app
+
+This app tests the select_with_include plugin (https://github.com/andrewroth/select_with_include)
+with rails 2.0.1.
+
+== To run tests:
+
+gem install rspec rspec-rails
+gem install factory_girl -v 2.0.1
+
