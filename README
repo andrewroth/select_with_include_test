@@ -1,7 +1,7 @@
 == select_with_include test app
 
 This app tests the select_with_include plugin (https://github.com/andrewroth/select_with_include)
-with rails 2.0.1.
+with rails 2.2.2.
 
 == To run tests:
 
@@ -14,4 +14,3 @@ git submodule update
 bundle install
 bundle exec rake db:test:clone_structure
 bundle exec spec spec/models/select_with_include_spec.rb
-
