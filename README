@@ -5,6 +5,13 @@ with rails 2.0.1.
 
 == To run tests:
 
-gem install rspec rspec-rails
-gem install factory_girl -v 2.0.1
+Use ruby 1.8.7
+
+git clone git://github.com/andrewroth/select_with_include_test.git
+cd select_with_include_test
+git submodule init
+git submodule update
+bundle install
+bundle exec rake db:test:clone_structure
+bundle exec spec spec/models/select_with_include_spec.rb
 
