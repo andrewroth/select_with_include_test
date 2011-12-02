@@ -1,0 +1,3 @@
+[submodule "vendor/plugins/select_with_include"]
+	path = vendor/plugins/select_with_include
+	url = git://github.com/andrewroth/select_with_include.git
