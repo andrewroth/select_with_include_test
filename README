@@ -12,5 +12,6 @@ cd select_with_include_test
 git submodule init
 git submodule update
 bundle install
+bundle exec rake db:schema:load
 bundle exec rake db:test:clone_structure
 bundle exec spec spec/models/select_with_include_spec.rb
