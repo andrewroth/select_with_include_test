@@ -1,3 +1,4 @@
 class Musician < ActiveRecord::Base
-  has_many :bands, :through => :musicians_bands
+  has_many :musicians_band
+  has_many :bands, :through => :musicians_band
 end
