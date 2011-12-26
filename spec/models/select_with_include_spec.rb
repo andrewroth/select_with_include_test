@@ -20,7 +20,8 @@ describe "select_with_include" do
   end
 
   it "should work with rails 2.3" do
-    musicians = FactoryGirl.build_list(:musician, 3, :first_name=>["Johannes", "Gina", "Klemens"])
+    johannes = FactoryGirl.build(:musician)
+#    musicians = FactoryGirl.build_list(:johannes, 3, :first_name=>["Johannes", "Gina", "Klemens"])
   end
     
 end

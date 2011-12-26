@@ -1,5 +1,5 @@
 FactoryGirl.define do
-  factory :johannes do
+  factory :musician do
     first_name "Johannes"
     last_name "Thoma"
   end
