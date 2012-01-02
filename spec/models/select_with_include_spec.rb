@@ -1,5 +1,7 @@
 gem 'factory_girl', '2.0.1'
 require 'factory_girl'
+gem 'activerecord', '2.3.14'
+require 'activerecord'
 require File.expand_path(File.dirname(__FILE__) + "/../../spec/factories/posts")
 require File.expand_path(File.dirname(__FILE__) + "/../../spec/factories/musicians.rb")
 require File.expand_path(File.dirname(__FILE__) + "/../../config/environment")
@@ -37,6 +39,9 @@ describe "select_with_include" do
     gina.bands << schwarzmarkt
     klemens.bands << trio
     klemens.bands << schwarzmarkt
+
+# This throws an exception with (unpatched) select_with_include 0.0.1
+    johannes.bands.first 
   end
     
 end
